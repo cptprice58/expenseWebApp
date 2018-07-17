@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row" >
+
+    <div class="col-md-6">
+<app-expense></app-expense>
+
+<hr>
+
+      <app-record *ngFor="let item of expenses | async ;let i = index;"
+      [value]="item.value"
+      [type]="item.type"></app-record>
+    </div>
+    <div class="col-md-6">
+        <app-income></app-income>
+
+        <hr>
+      <app-record *ngFor="let item of incomes | async ;let i = index;"
+      [value]="item.value"
+      [type]="item.type"></app-record>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12" id="summary">
+
+      <app-summary></app-summary>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.row div{
+  margin-top: 20px;
+  padding-top: 20px;
+  min-height: 200px;
+  border:1px solid #000000;
+}
+
+#summary{
+  background: lightgray;
+}
